@@ -213,9 +213,18 @@ importers:
 
   apps/backend:
     dependencies:
+      '@auth-system/database':
+        specifier: workspace:*
+        version: link:../../packages/database
+      auth:
+        specifier: workspace:*
+        version: link:../../packages/auth
       express:
         specifier: ^5.2.1
         version: 5.2.1
+      zod:
+        specifier: ^4.4.3
+        version: 4.4.3
     devDependencies:
       '@types/express':
         specifier: ^5.0.6
