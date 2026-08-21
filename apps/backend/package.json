@@ -16,10 +16,12 @@
   "dependencies": {
     "@auth-system/database": "workspace:*",
     "auth": "workspace:*",
+    "cookie-parser": "^1.4.7",
     "express": "^5.2.1",
     "zod": "^4.4.3"
   },
   "devDependencies": {
+    "@types/cookie-parser": "^1.4.10",
     "@types/express": "^5.0.6",
     "@types/node": "^24.13.3",
     "tsx": "^4.23.12",
