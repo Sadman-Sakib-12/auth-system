@@ -15,6 +15,7 @@
   "type": "module",
   "dependencies": {
     "@auth-system/database": "workspace:*",
+    "@auth-system/validation": "workspace:*",
     "auth": "workspace:*",
     "cookie-parser": "^1.4.7",
     "express": "^5.2.1",

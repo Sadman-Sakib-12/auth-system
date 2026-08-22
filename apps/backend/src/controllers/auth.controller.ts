@@ -1,11 +1,13 @@
 import type { Request, Response } from "express";
-import { registerSchema } from "../schemas/auth.schema.js";
 import { createUser } from "../services/auth.service.js";
 import { emailExists } from "../utils/email.js";
-import { loginSchema } from "../schemas/auth.schema.js";
 import { loginUser } from "../services/login.service.js";
 import type { AuthenticatedRequest } from "../middleware/auth.types.js";
 import { revokeSession } from "../services/session.service.js";
+import {
+  registerSchema,
+  loginSchema,
+} from "@auth-system/validation";
 export async function register(req: Request, res: Response) {
   const result = registerSchema.safeParse(req.body);
 

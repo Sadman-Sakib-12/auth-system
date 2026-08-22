@@ -1,6 +1,6 @@
 import { PrismaClient } from "@auth-system/database";
 import { hashPassword } from "auth";
-import type { RegisterInput } from "../schemas/auth.schema.js";
+import type { RegisterInput } from "@auth-system/validation";
 import { normalizeEmail } from "../utils/email.js";
 
 const db = new PrismaClient();
